@@ -1,0 +1,58 @@
+.banner {
+    background-image: 
+        url(../images/banner-background/pc1x.jpg);
+        /* i tried to use linear gradient but without it,
+            banner looks exactly like on figma*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 436px;
+    padding-bottom: 60px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+@media (min-resolution: 2x) {
+    .banner {
+        background-image:
+            url(../images/banner-background/pc@2x.jpg);
+    }
+}
+
+
+.title {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 72px;
+    letter-spacing: 0;
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom: 16px;
+    color: white;
+}
+
+.subtitile {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0;
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.link {
+    background-color: #3470FF;
+    color: white;
+    padding: 12px 88px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: center;
+    display: block;
+    width: max-content;
+    cursor: pointer;
+    margin: 0 auto;
+}

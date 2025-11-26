@@ -1,0 +1,29 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 120px;
+    background-color: #F2F4F7;
+    color: #101828;
+}
+
+.navigation {
+    display: flex;
+    gap: 32px;
+    list-style-type: none;
+}
+
+.navigation li a{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0;
+    text-align: center;
+    color: #101828;
+}
+
+.navigation li a:focus,
+.navigation li a:hover {
+    color: #0B44CD;
+}
+

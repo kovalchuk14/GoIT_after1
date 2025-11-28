@@ -1,0 +1,79 @@
+.model {
+    color: #3470FF;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    row-gap: 48px;
+    flex-wrap: wrap;
+}
+
+.card {
+    height: 424px;
+    width: calc((100% - 96px) / 4);
+}
+
+.imgContainer {
+    position: relative;
+    margin-bottom: 16px;
+    background-color: #3470FF;
+}
+
+.favouriteSvg {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.carPhoto {
+    width: 276px;
+    height: 268px;
+}
+
+.description {
+    margin-bottom: 28px;
+    width: 100%;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0;
+    vertical-align: middle;
+    color: #101828;
+    padding-right: 11px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.info {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0;
+    color: #8D929A;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.button {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0;
+    background-color: #3470FF;
+    color: white;
+    width: 100%;
+    padding: 12px 0;
+    border-radius: 12px;
+}
+
+.button:hover, 
+.button:focus {
+    background-color: #0B44CD;
+}

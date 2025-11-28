@@ -1,0 +1,17 @@
+.buttonLoad {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0;
+    border: 1px solid #3470FF;
+    padding: 12px 38px;
+    margin: 0 auto;
+    margin-top: 80px;
+    border-radius: 12px;
+    display: block;
+}
+
+.buttonLoad:hover, 
+.buttonLoad:focus{
+    border:1px solid #0B44CD;
+}

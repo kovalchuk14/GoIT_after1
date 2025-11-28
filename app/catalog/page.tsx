@@ -1,7 +1,13 @@
+import FilterBar from "@/components/FilterBar/FilterBar";
+import CarList from "@/components/CarList/CarList";
+import css from "./CatalogPage.module.css"
+
 export default function CatalogPage() {
     return (
         <main>
-            <h1>this is page</h1>
+            <FilterBar />
+            <CarList />
+            <button className={ css.buttonLoad}>Load more</button>
         </main>
     )
 }

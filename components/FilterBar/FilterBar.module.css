@@ -1,0 +1,78 @@
+.container{
+    max-width: 924px;
+    display: flex;
+    gap: 16px;
+    margin: 0 auto;
+    margin-top: 84px;
+    justify-content: space-between;
+    margin-bottom: 56px;
+}
+
+.container>div:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+.params {
+    color: #8D929A;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0;
+    vertical-align: middle;
+    margin-bottom: 8px;
+}
+
+.button {
+    background-color: #3470FF;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0;
+    border: none;
+    padding: 12px 51px;
+    border-radius: 12px;
+    font-family: var(--font-manrope), sans-serif;
+    margin-top: auto;
+}
+
+
+.button:hover,
+.button:focus {
+    background-color: #0B44CD;
+}
+
+
+.doubleInput {
+    display: flex;
+    align-items: center;
+    background-color: #F7F7F7;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.inputField {
+    flex: 1;
+    padding: 12px 16px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    line-height: 20px;
+    color: #101828;
+    width: 160px;
+}
+
+.inputField::placeholder {
+    color: #101828;
+}
+.separator {
+    width: 1px;
+    background-color: #DADDE1;
+    height: 100%;
+}
+
+

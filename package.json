@@ -16,6 +16,7 @@
     "formik": "^2.4.9",
     "next": "16.0.4",
     "react": "19.2.0",
+    "react-datepicker": "^8.10.0",
     "react-dom": "19.2.0",
     "use-debounce": "^10.0.6",
     "yup": "^1.7.1",

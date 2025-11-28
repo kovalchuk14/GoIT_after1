@@ -1,11 +1,13 @@
 .carPage{
     margin-top: 84px;   
+    margin-bottom: 104px;
 }
 
 .container {
     margin: 0 auto;
     max-width: 1440px;
     padding: 0 120px;
+    width: 100%;
     display: flex;
     gap:72px
 }
@@ -17,4 +19,97 @@
 .carImage {
     margin-bottom: 40px;
     border-radius: 18.74;
+}
+
+.input {
+
+}
+
+.carMainInfo {
+    margin-bottom: 68px;
+    max-width: 488px;
+}
+
+.carSecondInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 110px;
+}
+
+.carPreview {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: start;
+    margin-bottom: 8px;
+}
+
+.carTitle {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.carId {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0;
+    color: #8D929A;
+    margin-bottom: 3px;
+}
+
+.carLocation {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0;
+    display: flex;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.carAddress {
+    margin: 0 16px 0 4px;
+}
+
+.carPrice {
+    margin-bottom: 32px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0;
+    color: #3470FF;
+}
+
+.carDescription {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0;
+}
+
+.carInfoTitle {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0;
+    margin-bottom: 20px;
+}
+
+.carInfoItem  {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0;
+    display: flex;
+    gap: 8px;
+}
+
+.carInfoContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }

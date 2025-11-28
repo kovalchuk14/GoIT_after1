@@ -1,4 +1,5 @@
 import css from "./CarList.module.css"
+import Link from "next/link";
 
 const spritePath = "/sprite.svg";
 
@@ -27,7 +28,7 @@ export default function CarList() {
                             <p>alsdlasd | aalsad</p>
                         </div>
                     </div>
-                    <button className={ css.button} >Read more</button>
+                    {/* <Link href="/catalog" className={ css.button} >Read more</Link> */}
                 </li>
                 
 

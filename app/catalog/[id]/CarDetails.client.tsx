@@ -4,6 +4,8 @@ import { useParams } from 'next/navigation';
 import { fetchCarById } from "@/lib/api/clientApi";
 import css from "./CarDetails.module.css";
 import Image from "next/image";
+import CarForm from "@/components/CarForm/CarForm"
+
 const spritePath = "/sprite.svg";
 
 export default function CarDetailsClient() {
@@ -33,38 +35,103 @@ export default function CarDetailsClient() {
                         className={css.carImage}
                         alt={car.model}
                     />
-                    <form>
-                        <input
-                            id="title"
-                            type="text"
-                            name="title"
-                            className={css.input}
-                        />
-                    </form>
+                    <CarForm />
                 </div>
                 <div>
-                    <div>
-                        <div>
-                            <p>{`${car.brand} ${car.model}, ${car.year}`}</p>
-                            <p>{car.id}</p>
+                    <div className={css.carMainInfo}>
+                        <div className={css.carPreview}>
+                            <h2 className={css.carTitle}>{`${car.brand} ${car.model}, ${car.year}`}</h2>
+                            <p className={css.carId}>id: {car.id}</p>
                         </div>
-                        <div>
+                        <div className={css.carLocation}>
                             <svg
-                                width="11.25"
-                                height="15"
+                                width="16"
+                                height="16"
                             >
                                 <use href={`${spritePath}#icon-location`} />
                             </svg>
-                            <p>{car.address}</p>
-                            <p>Mileage: { car.mileage} km</p>
+                            <p className={css.carAddress}>{car.address}</p>
+                            <p>Mileage: {new Intl.NumberFormat("uk-UA").format(car.mileage)} km</p>
                         </div>
-                        <p>${ car.rentalPrice}</p>
-                        <p>{car.description}</p>
+                        <p className={css.carPrice}>${car.rentalPrice}</p>
+                        <p className={css.carDescription}>{car.description}</p>
                     </div>
-                    <div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
+                    <div className={css.carSecondInfo}>
+                        <div>
+                            <p className={css.carInfoTitle}>Rental Conditions: </p>
+                            <ul className={css.carInfoContainer}>
+                                {car.rentalConditions.map((item, idx) => (
+                                    
+                                    <li key={idx} className={css.carInfoItem}>
+                                        <svg
+                                            width="16"
+                                            height="16"
+                                        >
+                                            <use href={`${spritePath}#icon-confirm`} />
+                                        </svg>
+                                        <p>{item}</p>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                        <div>
+                            <p className={css.carInfoTitle}>Car Specifications:</p>
+                            <ul className={css.carInfoContainer}>
+                                <li className={css.carInfoItem}>
+                                        <svg
+                                            width="16"
+                                            height="16"
+                                        >
+                                            <use href={`${spritePath}#icon-calendar`} />
+                                        </svg>
+                                        <p>Year: {car.year}</p>
+                                </li>
+                                <li className={css.carInfoItem}>
+                                        <svg
+                                            width="16"
+                                            height="16"
+                                        >
+                                            <use href={`${spritePath}#icon-auto`} />
+                                        </svg>
+                                        <p>Type: {car.type}</p>
+                                </li>
+                                <li className={css.carInfoItem}>
+                                        <svg
+                                            width="16"
+                                            height="16"
+                                        >
+                                            <use href={`${spritePath}#icon-gas`} />
+                                        </svg>
+                                        <p>Fuel Consumption: {car.fuelConsumption}</p>
+                                </li>
+                                <li className={css.carInfoItem}>
+                                        <svg
+                                            width="16"
+                                            height="16"
+                                        >
+                                            <use href={`${spritePath}#icon-setting`} />
+                                        </svg>
+                                        <p>Engine Size: {car.engineSize}</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p className={css.carInfoTitle}>Accessories and functionalities:</p>
+                            <ul className={css.carInfoContainer}>
+                                {[...car.accessories, ...car.functionalities].map((item, idx) => (
+                                    
+                                    <li key={idx} className={css.carInfoItem}>
+                                        <svg
+                                            width="16"
+                                            height="16"
+                                        >
+                                            <use href={`${spritePath}#icon-confirm`} />
+                                        </svg>
+                                        <p>{item}</p>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

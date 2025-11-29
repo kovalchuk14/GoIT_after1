@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Car Rent App | Your Personal Car in your app",
     description: "find a car of your dream by filter",
-    url: "https://09-auth-h135.vercel.app/",//
+    url: "https://go-it-after1.vercel.app/",//
   }
 };
 

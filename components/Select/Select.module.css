@@ -29,7 +29,7 @@
     overflow: hidden;
     transform-origin: top;
     transition: all 0.2s ease;
-
+    z-index: 999;
     max-height: 0;
     opacity: 0;
     pointer-events: none;
@@ -42,6 +42,8 @@
 }
 
 .dropdownList {
+    scrollbar-width: 8px;
+    scrollbar-color: #DADDE1 white;
     max-height: 15rem;
     overflow-y: auto;
     margin: 0;
@@ -53,8 +55,11 @@
     flex-direction: column;
 }
 
+.dropdownList::-webkit-scrollbar-button {
+    display: none;
+    /* не прибирає стрілки.... */
+}
 .dropdownItem {
-    font-family: Manrope;
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
@@ -70,6 +75,5 @@
 }
 
 .selected {
-    background-color: #f9fafb;
-    font-weight: 600;
+    color:#101828;
 }

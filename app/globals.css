@@ -16,6 +16,7 @@ a {
   text-decoration: none;
 }
 
+
 h1,h2,h3,h4,p {
   margin: 0;
 }
@@ -28,4 +29,168 @@ button {
   margin: 0 auto;
   max-width: 1440px;
   padding: 0 120px;
+}
+
+/*  */
+
+/* globals.css або CarForm.css без модулів */
+div .react-datepicker {
+  border: 1px solid #3470FF;
+  border-radius: 8px;
+  
+  background-color: white;
+  font-family: sans-serif;
+  padding: 1px;
+}
+
+div .react-datepicker__header {
+  background-color: #fff;
+  border-bottom: none;
+  padding: 8px 0;
+}
+
+
+
+div .react-datepicker__navigation {
+  top: 10px;
+  line-height: 1;
+  
+}
+
+div .react-datepicker__day-names {
+  
+  font-weight: 500;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #3470FF;
+
+}
+
+div .react-datepicker__day-name {
+  color: #999;
+}
+
+div .react-datepicker__day {
+  color: #333;
+  width: 36px;
+  height: 32px;
+  margin: 0;
+  line-height: 32px;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+div .react-datepicker__day:hover {
+  background-color: #e6f0ff;
+}
+
+div .react-datepicker__day--selected,
+.react-datepicker__day--in-selecting-range,
+.react-datepicker__day--in-range,
+.react-datepicker__month-text--selected,
+.react-datepicker__month-text--in-selecting-range,
+.react-datepicker__month-text--in-range,
+.react-datepicker__quarter-text--selected,
+.react-datepicker__quarter-text--in-selecting-range,
+.react-datepicker__quarter-text--in-range,
+.react-datepicker__year-text--selected,
+.react-datepicker__year-text--in-selecting-range,
+.react-datepicker__year-text--in-range 
+{
+  background-color: #3470FF !important;
+  color: white !important;
+  border-radius: 50% !important;
+}
+
+div .react-datepicker__day--keyboard-selected,
+.react-datepicker__month-text--keyboard-selected,
+.react-datepicker__quarter-text--keyboard-selected,
+.react-datepicker__year-text--keyboard-selected {
+background-color: #3470FF !important;
+  color: white !important;
+  border-radius: 50% !important;
+}
+
+div .react-datepicker__day--outside-month {
+  color: #ccc;
+}
+
+div .react-datepicker__navigation-icon:before,
+.react-datepicker__year-read-view--down-arrow,
+.react-datepicker__month-read-view--down-arrow,
+.react-datepicker__month-year-read-view--down-arrow
+{
+  content: "";
+  border: 3px solid #3470FF;
+  border-width: 2px 2px 0 0;
+  width: 9px;
+  height: 9px;
+  display: block;
+  position: absolute;
+  top: -3px;
+}
+
+/* Прибираємо стандартний текст */
+.react-datepicker__day-name {
+  font-size: 0;
+  /* сховати текст */
+  position: relative;
+}
+
+/* Понеділок */
+.react-datepicker__day-name:nth-child(1)::after {
+  content: "Mon";
+  font-size: 12px;
+  color: #999;
+}
+
+/* Вівторок */
+.react-datepicker__day-name:nth-child(2)::after {
+  content: "Tue";
+  font-size: 12px;
+  color: #999;
+}
+
+/* Середа */
+.react-datepicker__day-name:nth-child(3)::after {
+  content: "Wed";
+  font-size: 12px;
+  color: #999;
+}
+
+/* Четвер */
+.react-datepicker__day-name:nth-child(4)::after {
+  content: "Thu";
+  font-size: 12px;
+  color: #999;
+}
+
+/* Пʼятниця */
+.react-datepicker__day-name:nth-child(5)::after {
+  content: "Fri";
+  font-size: 12px;
+  color: #999;
+}
+
+/* Субота */
+.react-datepicker__day-name:nth-child(6)::after {
+  content: "Sat";
+  font-size: 12px;
+  color: #999;
+}
+
+/* Неділя */
+.react-datepicker__day-name:nth-child(7)::after {
+  content: "Sun";
+  font-size: 12px;
+  color: #999;
+}
+
+div .react-datepicker__triangle::before {
+  border-bottom-color: #fff !important;
+  /* колір верхнього шару */
+}
+
+div .react-datepicker__triangle::after {
+  border-bottom-color: #ffffff !important;
+  /* колір нижнього шару */
 }

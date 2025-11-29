@@ -11,3 +11,6 @@ export async function fetchCarById(id: string): Promise<Car>{
   });
     return res.data;
 }
+
+
+

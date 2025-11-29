@@ -15,3 +15,7 @@
 .buttonLoad:focus{
     border:1px solid #0B44CD;
 }
+
+.section {
+margin-bottom: 124px;
+}

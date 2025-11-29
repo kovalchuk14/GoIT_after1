@@ -59,3 +59,9 @@ textarea.formInput {
     margin: 0 auto;
     border-radius: 12px;
 }
+
+.formButton:hover,
+.formButton:focus {
+    background-color: #0B44CD;
+}
+

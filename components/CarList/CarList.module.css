@@ -12,24 +12,44 @@
 
 .card {
     height: 424px;
+    height: max-content;
     width: calc((100% - 96px) / 4);
 }
 
 .imgContainer {
     position: relative;
     margin-bottom: 16px;
-    background-color: #3470FF;
+    border-radius: 12px;
 }
+
+.favouriteSvg,
+.favouriteSvgFill{
+    
+    cursor: pointer;
+}
+
+
 
 .favouriteSvg {
+    fill: none;
     position: absolute;
-    top: 16px;
-    right: 16px;
+        top: 16px;
+        right: 16px;
+    fill: #F2F4F7;
+    cursor: pointer;
+    transition: fill 0.2s;
 }
 
-.carPhoto {
+.favouriteSvg.fill {
+    fill: #3470FF;
+    stroke: #3470FF;
+    /* заповнене серце */
+}
+
+.carImage {
     width: 276px;
     height: 268px;
+    border-radius: 12px;
 }
 
 .description {
@@ -71,6 +91,9 @@
     width: 100%;
     padding: 12px 0;
     border-radius: 12px;
+    display: block;
+    text-align: center;
+    
 }
 
 .button:hover, 

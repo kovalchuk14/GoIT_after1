@@ -4,7 +4,7 @@ import Header from "@/components/Header/Header";
 import TanStackProvider from "@/components/TanStackProvider/TanStackProvider";
 import { Manrope } from 'next/font/google';
 
-export const manrope = Manrope({
+const manrope = Manrope({
   subsets: ['latin'],
   weight: ['400', '700'],
   display: 'swap',
